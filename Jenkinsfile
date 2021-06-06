@@ -14,16 +14,6 @@ pipeline {
 
   stages {
 
-    stage('Cloning Git') {
-
-      steps {
-
-        git 'https://github.com/BahadorSoleimani/ClassEndProject.git'
-
-      }
-
-    }
-
     stage('Building image') {
 
       steps{
