@@ -4,7 +4,7 @@ pipeline {
 
     registry = "bahadorsoleimani/devopsproject"
 
-    registryCredential = 'Docker-Creds'
+    registryCredential = 'docker-creds'
 
     dockerImage = ''
 
@@ -13,16 +13,6 @@ pipeline {
   agent any
 
   stages {
-
-    stage('Cloning Git') {
-
-      steps {
-
-        git 'https://github.com/BahadorSoleimani/ClassEndProject.git'
-
-      }
-
-    }
 
     stage('Building image') {
 
