@@ -4,7 +4,7 @@ pipeline {
 
     registry = "bahadorsoleimani/devopsproject"
 
-    registryCredential = 'Docker-Creds'
+    registryCredential = 'docker-creds'
 
     dockerImage = ''
 
